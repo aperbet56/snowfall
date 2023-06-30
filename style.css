@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    background: url("img/paysage_1.jpg") center no-repeat fixed;
+    object-fit: fill;
+    width: 100%;
+    height: 100vh;
+}
+
+
+#snow__fall span {
+    position: absolute;
+    top: -30px;
+    border-radius: 100%;
+    height: 12px;
+    width: 12px;
+    background-color: #ffffff;
+    filter: blur(3px);
+    animation: snowfall 5s ease-in-out infinite;
+} 
+
+@keyframes snowfall {
+    100% {
+        transform: translateY(120vh) scale(.4);
+    }
+}
+
